@@ -14,6 +14,7 @@ namespace app1
 		{
 			base.ViewDidLoad ();
 			// Perform any additional setup after loading the view, typically from a nib.
+            
 		}
 
 		public override void DidReceiveMemoryWarning ()

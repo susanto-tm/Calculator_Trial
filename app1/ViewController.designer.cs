@@ -14,5 +14,16 @@ namespace app1
     [Register ("ViewController")]
     partial class ViewController
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel helloLabel { get; set; }
+
+        void ReleaseDesignerOutlets ()
+        {
+            if (helloLabel != null) {
+                helloLabel.Dispose ();
+                helloLabel = null;
+            }
+        }
     }
 }
