@@ -1,0 +1,2 @@
+# calctrial
+iOS app trial
