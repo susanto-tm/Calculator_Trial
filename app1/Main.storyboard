@@ -21,20 +21,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1556" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                                <rect key="frame" x="142" y="90" width="89" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1878" translatesAutoresizingMaskIntoConstraints="NO" text="Enter a Phoneword:" misplaced="YES">
+                                <rect key="frame" x="16" y="116" width="343" height="21"/>
                                 <nil key="highlightedColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1-855-XAMARIN" borderStyle="roundedRect" minimumFontSize="17" id="1883" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="16" y="189" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1887" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="16" y="289" width="343" height="30"/>
+                                <state key="normal" title="Translate"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1891" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="16" y="355" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Call"/>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint id="1557" firstItem="1556" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
-                            <constraint id="1558" firstItem="1556" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70"/>
+                            <constraint id="3520" firstItem="1883" firstAttribute="top" secondItem="1878" secondAttribute="bottom" constant="52"/>
+                            <constraint id="3745" firstItem="1878" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="96"/>
+                            <constraint id="3746" firstItem="1883" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
+                            <constraint id="3747" firstItem="1883" firstAttribute="width" secondItem="1887" secondAttribute="width"/>
+                            <constraint id="3748" firstItem="1878" firstAttribute="width" secondItem="1883" secondAttribute="width"/>
+                            <constraint id="3749" firstItem="1878" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
+                            <constraint id="3987" firstItem="1887" firstAttribute="top" secondItem="1883" secondAttribute="bottom" constant="70"/>
+                            <constraint id="4217" firstItem="1887" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="helloLabel" destination="1556" id="name-outlet-1556"/>
+                        <outlet property="PhoneNumberText" destination="1883" id="name-outlet-1883"/>
+                        <outlet property="TranslateButton" destination="1887" id="name-outlet-1887"/>
+                        <outlet property="CallButton" destination="1891" id="name-outlet-1891"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
